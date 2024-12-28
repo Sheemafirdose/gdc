@@ -9,26 +9,31 @@
             background-color: rgb(245, 241, 241);
             color: black;
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Ensures content flows vertically */
+            justify-content: flex-start; /* Aligns items at the top */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        h1, h2 {
+        h1 {
             text-align: center;
         }
         .event-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 20px;
+            width: 80%;
         }
         .event-card {
             background-color: rgba(253, 254, 255, 0.995);
             padding: 20px;
             border-radius: 10px;
-            width: 80%;
             text-align: center;
             margin: 10px 0;
         }
         .event-card img {
-            width: 50%; /* Reduced image size */
+            max-width: 60%; /* Further reduced image size */
             height: auto;
             border-radius: 10px;
         }
